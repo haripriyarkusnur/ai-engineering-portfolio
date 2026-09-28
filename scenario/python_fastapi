@@ -1,0 +1,22 @@
+Q1. An API processes 10 million records and is too slow. How would you profile and optimize it?
+Profiling – Find where the API is slow.
+Database optimization – Optimize queries and add proper indexes.
+Batch processing – Process records in smaller batches instead of all 10 million at once.
+Pagination – Return data page by page instead of returning everything.
+Caching – Use Redis/cache for frequently requested data.
+Async processing – Move long-running work to background jobs.
+Parallel processing – Process independent batches simultaneously.
+Query optimization – Fetch only required columns and avoid unnecessary joins.
+Avoid N+1 queries – Reduce repeated database calls.
+Load balancing – Distribute requests across multiple API servers.
+Database partitioning – Split very large tables into manageable partitions.
+Response optimization – Return only required data and avoid huge JSON responses.
+Monitoring – Monitor CPU, memory, database latency, API latency, and errors.
+Benchmarking – Measure performance before and after optimization.
+Easy way to remember
+
+Profile → Database → Batch → Cache → Async → Parallel → Optimize → Monitor
+
+For an interview, you can simply say:
+
+“For 10 million records, I would first profile the API to identify the bottleneck. Then I would use database optimization, indexing, batch processing, pagination, caching, asynchronous/background processing, parallel processing, and response optimization. Finally, I would monitor and benchmark the API to verify the improvements.”
